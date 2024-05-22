@@ -8,13 +8,16 @@
     android:fitsSystemWindows="true"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -23,17 +26,30 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/linearLayout"
+        android:layout_below="@id/appBarLayout"
+        android:layout_alignParentEnd="true"
         android:layout_margin="10dp"
-        android:layout_marginBottom="154dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="17dp"
+        android:layout_centerInParent="true"
         android:layout_weight="1"
         android:padding="5dp"
-        android:scaleType="fitXY" />
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher_background" />
 
     <ProgressBar
         android:id="@+id/pgBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"/>
+        android:layout_below="@+id/appBarLayout"
+        android:layout_alignEnd="@+id/img"
+        android:layout_alignBottom="@+id/img"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="278dp"
+        android:layout_marginEnd="173dp"
+        android:layout_marginBottom="254dp" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
